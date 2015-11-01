@@ -21,6 +21,23 @@ h2, .text--large {
   font-weight: 200;
 }
 
+h3 {
+  font-family: $font-primary;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 200;
+  font-style: normal;
+  margin: 0;
+}
+
 .text--question {
   margin-bottom: 24px !important;
 }
