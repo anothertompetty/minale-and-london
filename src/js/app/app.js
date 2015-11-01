@@ -25,4 +25,8 @@ $(document).on('ready', function() {
 
   });
 
+  $('.main').waypoint(function() {
+    $('.header').toggle();
+  })
+
 });

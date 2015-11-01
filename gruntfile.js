@@ -102,7 +102,8 @@ module.exports = function(grunt) {
         },
 
         files: {
-          "_build/js/app.min.js" : ["./src/js/libs/jquery-1.11.2.min.js", 
+          "_build/js/app.min.js" : ["./src/js/libs/jquery-1.11.2.min.js",
+                                   "./src/js/libs/waypoints.js",
                                    "./src/js/app/app.js",
                                    "./src/js/helpers/helpers.js"]
         }
