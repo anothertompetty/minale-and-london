@@ -1,37 +1,23 @@
 @font-face {
-  font-family: 'noe-display';
+  font-family: 'brandontext';
   font-style: bold;
   font-weight: 700;
-  src: local('noe-display'), url(/fonts/Noe-Display-Bold.woff) format('woff');
+  src: local('brandontext'), 
+  url(/fonts/brandontext-bold-webfont.woff) format('woff');
 }
 
 @font-face {
-  font-family: 'noe-display';
-  font-style: italic;
+  font-family: 'brandontext';
+  font-style: medium;
   font-weight: 400;
-  src: local('noe-display'), 
-  url(/fonts/Noe-Display-Regular-Italic.woff) format('woff');
+  src: local('brandontext'), 
+  url(/fonts/brandontext-medium-webfont.woff) format('woff');
 }
 
 @font-face {
-  font-family: 'noe-text';
+  font-family: 'brandontext';
   font-style: normal;
-  font-weight: 400;
-  src: local('noe-text'), 
-  url(/fonts/Noe-Text-Regular.woff) format('woff');
-}
-
-@font-face {
-  font-family: 'range-mono';
-  font-style: normal;
-  font-weight: 400;
-  src: local('range-mono'), url(/fonts/range-mono-regular.woff) format('woff');
-}
-
-@font-face {
-  font-family: 'range-mono';
-  font-style: bold;
-  font-weight: 700;
-  src: local('range-mono'), 
-  url(/fonts/range-mono-bold.woff) format('woff');
+  font-weight: 200;
+  src: local('brandontext'), 
+  url(/fonts/brandontext-regular-webfont.woff) format('woff');
 }
