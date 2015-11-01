@@ -1,0 +1,17 @@
+.section {
+  padding-top: 180px;
+  padding-bottom: 180px;
+  border-bottom: 1px solid black;
+}
+
+.section__service {
+  max-width: 226px;
+  display: inline-block;
+  text-align: center;
+  padding: 0px $large-space;
+}
+
+.section__service__img {
+  width: 60px !important;
+  opacity: 0.5;
+}

@@ -1,0 +1,21 @@
+button {
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: none;
+}
+
+.button {
+  text-transform: uppercase;
+  padding: $medium-space $large-space;
+  border: 3px solid $color-light;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  color: $color-dark;
+  background-color: $color-light;
+}
