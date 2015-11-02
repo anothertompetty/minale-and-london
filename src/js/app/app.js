@@ -1,28 +1,42 @@
 $(document).on('ready', function() {
 
-  $('.menu__button').on('click', function() {
-    $('.menu').fadeToggle(125);
-    $('.menu__button__icon').toggle();
-    $('.menu__button__icon--close').toggle();
+  var contactButton = $('.button--contact');
+  var contactForm = $('.contact-form');
+  var contactContent = $('.contact-form__content');
+  var contactClose = $('.contact-form__close');
+
+  contactButton.on('click', function() {
+    contactForm.fadeToggle(125, function() {
+      contactContent.fadeIn();
+      contactContent.addClass('fadeInUp');
+    });
   });
 
-  var target = $('.hero__img');
-  var targetHeight = target.height();
-  var containerHeight = $('body').outerHeight();
+  contactClose.on('click', function() {
+    contactForm.fadeToggle(125)
+  });
 
-  var maxScroll = containerHeight - targetHeight;
-  var scrollRange = maxScroll/(target.length-1);
+  var hero = $('.hero');
+  var main = $('.main');
+  var range = hero.outerHeight();
 
-  $(document).scroll(function(e){
-
-    var scrollY = $(window).scrollTop();
-    var scrollPercent = (scrollRange - scrollY%scrollRange)/scrollRange;
-    var divIndex = Math.floor(scrollY/scrollRange);
-
-    target.has(':lt(' + divIndex + ')').css('opacity', 0);
-    target.eq(divIndex).css('opacity', scrollPercent);
-    target.has(':gt(' + divIndex + ')').css('opacity', 1);
-
+  $(window).on('scroll', function () {
+    
+      var scrollTop = main.scrollTop();
+      var offset = hero.offset().top;
+      var height = hero.outerHeight();
+      offset = offset + height;
+      var calc = 1 - (scrollTop - offset + range * 2) / range;
+    
+      hero.css({ 'opacity': calc });
+      console.log(calc);
+    
+      if (calc > '1') {
+      hero.css({'opacity': 1});
+    } else if (calc < '0') {
+      hero.css({'opacity': 0});
+    }
+    
   });
 
   $('.main').waypoint(function() {
