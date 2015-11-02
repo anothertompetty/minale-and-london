@@ -26,7 +26,12 @@ $(document).on('ready', function() {
   });
 
   $('.main').waypoint(function() {
-    $('.header').toggle();
+    
+    var header = $('.header');
+
+    header.toggle();
+    header.toggleClass('bounceInDown');
+
   })
 
 });
