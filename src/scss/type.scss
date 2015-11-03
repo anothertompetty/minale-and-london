@@ -38,29 +38,6 @@ p {
   margin: 0;
 }
 
-.text--question {
-  margin-bottom: 24px !important;
-}
-
-.text--question span {
-  border-bottom: 1px solid $color-dark;
-}
-
-.text--meta {
-  font-family: $font-meta;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 12px;
-  line-height: 24px;
-  -webkit-font-smoothing: subpixel-antialiased;
-}
-
-.text--meta--heavy {
-  @extend .text--meta;
-  font-weight: 700;
-  font-style: bold;
-}
-
 blockquote {
   font-family: $font-headline;
   font-weight: 400;

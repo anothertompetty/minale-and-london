@@ -15,8 +15,19 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e1e1e', endColorstr='#001e1e1e',GradientType=0 ); /* IE6-9 */
 }
 
+.header__offset {
+  margin-right: -44px;
+}
+
 .header__logo {
   width: 60px;
+}
+
+.header__menu {
+  position: relative;
+  top: -15px;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 @keyframes bounceInDown {
