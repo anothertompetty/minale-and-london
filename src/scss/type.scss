@@ -19,6 +19,14 @@ h2, .text--large {
   line-height: 40px;
   font-style: normal;
   font-weight: 200;
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 500px) {
+  h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
 }
 
 h3 {
