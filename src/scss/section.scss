@@ -14,8 +14,12 @@
 
 @media screen and (max-width: 500px) {
   .section {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .section:first-of-type {
+    padding-top: 0;
   }
 }
 
