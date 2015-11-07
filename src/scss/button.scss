@@ -15,6 +15,14 @@ button {
   transition: all 0.2s ease-in-out;
 }
 
+@media screen and (max-width: 500px) {
+  .button {
+    padding: $small-space $medium-space;
+    border: 2px solid $color-light;
+    font-size: 12px;
+  }
+}
+
 .button:hover {
   color: $color-dark;
   background-color: $color-light;

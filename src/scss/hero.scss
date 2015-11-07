@@ -16,6 +16,7 @@
   .hero {
     background: none;
     position: relative;
+    height: auto;
   }
 }
 
@@ -32,7 +33,9 @@
 @media screen and (max-width: 500px) {
   .hero__logo {
     position: relative;
-    top: 40%;
+    transform: initial;
+    top: initial;
+    left: initial;
   }
 }
 
@@ -46,6 +49,10 @@
   bottom: 20px;
   left: 50%;
   margin-left: -20px;
+}
+
+@media screen and (max-width: 500px) {
+  display: none;
 }
 
 @keyframes bounce {
