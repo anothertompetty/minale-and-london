@@ -6,7 +6,8 @@ button {
   background: none;
 }
 
-.button {
+.button,
+a.button, {
   text-transform: uppercase;
   padding: $medium-space $large-space;
   border: 3px solid $color-light;
@@ -15,8 +16,13 @@ button {
   transition: all 0.2s ease-in-out;
 }
 
+a.button {
+  display: inline-block;
+}
+
 @media screen and (max-width: 500px) {
-  .button {
+  .button,
+  a.button {
     padding: $small-space $medium-space;
     border: 2px solid $color-light;
     font-size: 12px;

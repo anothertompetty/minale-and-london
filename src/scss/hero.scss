@@ -45,7 +45,17 @@
   height: 0; 
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 20px solid rgba(255,255,255,0.3);
+  border-top: 20px solid rgba(255,255,255,0.5);
+  bottom: 20px;
+  left: 50%;
+  margin-left: -20px;
+}
+
+.hero__arrow--link {
+  position: fixed;
+  width: 0; 
+  height: 0; 
+  padding: 40px;
   bottom: 20px;
   left: 50%;
   margin-left: -20px;

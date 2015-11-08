@@ -74,39 +74,3 @@
   animation: bounceInDown 1s;
   display: none;
 }
-
-// .header--mobile {
-//   display: none;
-//   position: absolute;
-//   top: 27px;
-//   left: auto;
-//   right: 20px;
-//   cursor: pointer;
-// }
-
-// @media screen and (max-width: 500px) {
-//   .header--mobile {
-//     display: block;
-//   }
-// }
-
-// // A lot of this is duplicated in the contact form. 
-// // Extract into a dialog component?
-
-// .header--mobile__menu {
-//   display: none;
-//   width: 100%;
-//   height: 100vh;
-//   background-color: rgba(30,30,30,0.95);
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   padding-top: 120px;
-//   z-index: 100;
-//   text-align: center;
-// }
-
-// .header--mobile__menu__content {
-//   display: none;
-//   margin: 0 auto;
-// }
