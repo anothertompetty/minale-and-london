@@ -26,13 +26,18 @@
   top: 50%;
   left: 50%;
   padding: 60px;
-  /* bring your own prefixes */
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 500px) {
   .hero__logo {
     position: relative;
+    -webkit-transform: initial;
+    -moz-transform: initial;
+    -o-transform: initial;
     transform: initial;
     top: initial;
     left: initial;
@@ -62,7 +67,9 @@
 }
 
 @media screen and (max-width: 500px) {
-  display: none;
+  .hero__arrow {
+    display: none;
+  }
 }
 
 @keyframes bounce {
