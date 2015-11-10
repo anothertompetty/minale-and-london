@@ -6,26 +6,7 @@ $(document).on('ready', function() {
     var header = $('.header');
     header.toggle();
     header.toggleClass('bounceInDown');
-
   });
-
-   // Header form modal (refactor to one piece of code)
-
-  // var menuButton = $('.header--mobile__icon');
-  // var mobileMenu = $('.header--mobile__menu');
-  // var mobileMenuContent = $('.header--mobile__menu__content');
-  // var contactClose = $('.contact-form__close');
-
-  // menuButton.on('click', function() {
-  //   mobileMenu.fadeToggle(125, function() {
-  //     mobileMenuContent.fadeIn();
-  //     mobileMenuContent.addClass('fadeInUp');
-  //   });
-  // });
-
-  // contactClose.on('click', function() {
-  //   mobileMenu.fadeToggle(125)
-  // });
 
   // Contact form modal
 
